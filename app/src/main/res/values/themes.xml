@@ -1,9 +1,17 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MockMidterm_Ebrada" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+
+    <style name="NumCalcButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:background">#333333</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
-    <style name="Theme.MockMidterm_Ebrada" parent="Base.Theme.MockMidterm_Ebrada" />
+    <style name="OperatorButton" parent="NumCalcButton">
+        <item name="android:background">#FF9800</item>
+    </style>
+
 </resources>

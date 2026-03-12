@@ -5,15 +5,131 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#101010"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+     android:id="@+id/textDisplay"
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:gravity="end|center_vertical"
+     android:text="@string/display_default"
+     android:textColor="#FFFFFF"
+     android:textSize="36sp"
+     android:padding="16dp"
+     android:background="#202020"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     app:layout_constraintHeight_percent="0.2" />
+
+<GridLayout
+android:id="@+id/gridButtons"
+android:layout_width="0dp"
+android:layout_height="0dp"
+android:columnCount="4"
+android:rowCount="5"
+android:padding="8dp"
+app:layout_constraintTop_toBottomOf="@id/textDisplay"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent">
+
+
+<Button
+    android:id="@+id/btnClear"
+    style="@style/NumCalcButton"
+    android:text="@string/op_clear" />
+
+<Button
+    android:id="@+id/btnCustom"
+    style="@style/NumCalcButton"
+    android:text="@string/op_custom" />
+
+<Button
+    android:id="@+id/btnDiv"
+    style="@style/OperatorButton"
+    android:text="@string/op_div" />
+
+<Button
+    android:id="@+id/btnMul"
+    style="@style/OperatorButton"
+    android:text="@string/op_mul" />
+
+
+<Button
+    android:id="@+id/btn7"
+    style="@style/NumCalcButton"
+    android:text="@string/num_seven" />
+
+<Button
+    android:id="@+id/btn8"
+    style="@style/NumCalcButton"
+    android:text="@string/num_eight" />
+
+<Button
+    android:id="@+id/btn9"
+    style="@style/NumCalcButton"
+    android:text="@string/num_nine" />
+
+<Button
+    android:id="@+id/btnSub"
+    style="@style/OperatorButton"
+    android:text="@string/op_sub" />
+
+
+<Button
+    android:id="@+id/btn4"
+    style="@style/NumCalcButton"
+    android:text="@string/num_four" />
+
+<Button
+    android:id="@+id/btn5"
+    style="@style/NumCalcButton"
+    android:text="@string/num_five" />
+
+<Button
+    android:id="@+id/btn6"
+    style="@style/NumCalcButton"
+    android:text="@string/num_six" />
+
+<Button
+    android:id="@+id/btnAdd"
+    style="@style/OperatorButton"
+    android:text="@string/op_add" />
+
+<Button
+    android:id="@+id/btn1"
+    style="@style/NumCalcButton"
+    android:text="@string/num_one" />
+
+<Button
+    android:id="@+id/btn2"
+    style="@style/NumCalcButton"
+    android:text="@string/num_two" />
+
+<Button
+    android:id="@+id/btn3"
+    style="@style/NumCalcButton"
+    android:text="@string/num_three" />
+
+<Button
+    android:id="@+id/btnEqual"
+    style="@style/OperatorButton"
+    android:text="@string/op_equal" />
+
+
+<Button
+    android:id="@+id/btn0"
+    style="@style/NumCalcButton"
+    android:text="@string/num_zero" />
+
+<Button
+    android:id="@+id/btnDot"
+    style="@style/NumCalcButton"
+    android:text="@string/num_dot" />
+
+</GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

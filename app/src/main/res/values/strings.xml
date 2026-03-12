@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">MockMidterm_Ebrada</string>
+
+    <string name="app_name">MockMidtermCalculator</string>
+
+
+    <string name="display_default">0</string>
+
+
+    <string name="num_zero">0</string>
+    <string name="num_one">1</string>
+    <string name="num_two">2</string>
+    <string name="num_three">3</string>
+    <string name="num_four">4</string>
+    <string name="num_five">5</string>
+    <string name="num_six">6</string>
+    <string name="num_seven">7</string>
+    <string name="num_eight">8</string>
+    <string name="num_nine">9</string>
+    <string name="num_dot">.</string>
+
+
+    <string name="op_clear">C</string>
+    <string name="op_add">+</string>
+    <string name="op_sub">-</string>
+    <string name="op_mul">×</string>
+    <string name="op_div">/</string>
+    <string name="op_equal">=</string>
+    <string name="op_custom">×0.83</string>
 </resources>
